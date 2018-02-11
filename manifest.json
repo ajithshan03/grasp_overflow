@@ -1,0 +1,24 @@
+{
+   
+   "browser_action": {
+      "default_icon": "images/search-icon19.png",
+      "default_popup": "go.html"
+   },
+   "content_scripts": [ {
+      "js": [ "src/extension.js" ],
+      "matches": [ "http://*.wolframalpha.com/*", "https://*.wolframalpha.com/*", "http://*.wolfram.com/*", "https://*.wolfram.com/*" ]
+   } ],
+   "description": "Search extension for wolfram",
+   "icons": {
+      "128": "images/search-icon128.png",
+      "16": "images/search-icon16.png",
+      "48": "images/search-icon48.png"
+   },
+  
+   "manifest_version": 2,
+   "name": "Grasp_Overflow",
+  
+   "permissions": [ "contextMenus", "tabs", "http://*.wolframalpha.com/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Search Wolfram</title>
+	<link rel="Shortcut Icon" href="http://www.wolframcdn.com/alphaFav.ico" />
+	<style type="text/css">
+	* {
+		font-family:Arial,Helvetica,sans-serif;
+		font-size: 14px;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+		opacity: 1.0;
+	}
+	
+	#inputform {
+		margin: 3px;
+		height: 53px;
+		width: 420px;
+		background: url(images/search-bar.png) 0 0 no-repeat;
+	}
+	
+	#input {
+		border: none;
+		height: 18px;
+		left: 25px;
+		outline: none;
+		position: absolute;
+		top: 19px;
+		width: 345px;
+	}
+	
+	#submitArea {
+		width: 25px;
+		height: 25px;
+		position: relative;
+		left: 375px;
+		top: 15px;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	</style>
+
+	<script src="src/jquery.js"></script>
+	<script src="src/popup.js"></script>
+
+</head>
+<body onload="document.getElementById('input').focus()">
+	<form id="inputform" action="" method="post">
+		<input id="input" name="input" type="text" />
+		<input id="submitArea" type="submit" value="" />
+	</form>
+	<div>
+	<center>
+	SEARCH TO GET GRASP...
+	</center>
+	</div>
+</body>
+</html>
